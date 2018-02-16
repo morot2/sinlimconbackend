@@ -17,6 +17,7 @@ public class CorsFilter extends OncePerRequestFilter {
 
 
 		response.addHeader("Access-Control-Allow-Origin", "*");
+                response.addHeader("Access-Control-Allow-Origin","http://localhost:4200");
 		if (request.getHeader("Access-Control-Request-Method") != null && "OPTIONS".equals(request.getMethod()))
 			;
 		{
